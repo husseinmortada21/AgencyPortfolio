@@ -229,7 +229,7 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
  <h3 style="display: block; color: black; text-align: center;">Some Of My Work</h3>
   <style>
     .websites{
-        display: inline block;
+        display: inline-flex;
         padding-right:3rem ;
         transition: 0.3s ;
    
@@ -240,17 +240,35 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
     .ftr{
        transition: ease-in;
     }
+    a:link  {
+  color: blue;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    
   </style>  
  <figure class="ftr">
-    <img class="websites" src="THEME-10.png">
-    <img class="websites" src="THEME-11-1.png">
-    <img class="websites" src="ajeenwebsite.png">
+  <a href="#"> <img class="websites" src="THEME-10.png" width="430px" height="436"></a>
+    <img class="websites" src="THEME-11-1.png" width="430px" height="436">
+    <img class="websites" src="ajeenwebsite.png" width="470px" height="1000">
 </figure>
-<br>
+<br><br>
 <figure>
-    <img class="websites" src="libantekwebsite.png">
-    <img class="websites" src="itecwebsite.png">
-    <img class="websites" src="theme-9.png">
+ <a href="#"><img class="websites" src="libantekwebsite.png"width="440px" height="600"></a>
+    <img class="websites" src="itecwebsite.png"width="430px" height="436">
+    <img class="websites" src="theme-9.png" width="430px" height="436">
 </figure>
 
 
